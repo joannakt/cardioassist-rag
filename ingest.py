@@ -6,9 +6,7 @@ import os
 chroma_client = chromadb.PersistentClient(path="./chroma_db")
 
 # Use sentence transformers for embeddings
-embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-    model_name="all-MiniLM-L6-v2"
-)
+embedding_fn = embedding_functions.DefaultEmbeddingFunction()
 
 # Create or get collection
 collection = chroma_client.get_or_create_collection(

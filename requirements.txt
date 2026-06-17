@@ -2,5 +2,4 @@ fastapi
 uvicorn
 anthropic
 chromadb
-sentence-transformers
 python-dotenv

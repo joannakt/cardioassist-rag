@@ -26,9 +26,8 @@ client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
 # ChromaDB
 chroma_client = chromadb.PersistentClient(path="./chroma_db")
-embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-    model_name="all-MiniLM-L6-v2"
-)
+embedding_fn = embedding_functions.DefaultEmbeddingFunction()
+
 collection = chroma_client.get_or_create_collection(
     name="clinic_faqs",
     embedding_function=embedding_fn
