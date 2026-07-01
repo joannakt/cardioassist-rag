@@ -62,7 +62,7 @@ OUR TEAM:
 - Dr. Selvin Sudhakar, MD — Interventional Cardiologist
 - Dr. Francis Uricchio, MD — Interventional Cardiologist
 - Monina Tubat, NP — Nurse Practitioner
-- Alma, NP — Nurse Practitioner
+- Alma Garavalia-Suwan, NP — Nurse Practitioner
 
 SERVICES WE OFFER:
 - Echocardiogram: High-resolution ultrasound imaging to assess heart structure and function
