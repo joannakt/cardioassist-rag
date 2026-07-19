@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/30168386/README.md)
 # CardioAssist
 
 A production RAG chatbot deployed on the website of Comprehensive Cardiology, a multi-location cardiology clinic in the Houston, TX area. Patients can ask questions about appointments, insurance, services, locations, and clinic providers — and get accurate, grounded responses instantly without calling the office.
