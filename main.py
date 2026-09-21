@@ -28,19 +28,20 @@ COMPREHENSIVE CARDIOLOGY — CLINIC INFORMATION
 
 LOCATIONS:
 - Nassau Bay: 2200 Nasa Pkwy, Ste 220, Houston, TX 77058
-- Friendswood: 107 Woodlawn Dr, Ste 113, Friendswood, TX 77546
+- Friendswood: 107 Woodlawn Dr, Ste 109, Friendswood, TX 77546
 
 PHONE: (281) 333-9200
+PHONE: (281) 648-8600
 FAX: (281) 648-8603
 
 OFFICE HOURS:
-Monday through Friday. Please call (281) 333-9200 for specific hours.
+Monday through Friday, 8:30 AM to 5:00 PM. Please call (281) 333-9200 or (281) 648-8600 for specific hours or holidays.
 
 APPOINTMENTS:
-Patients can schedule an appointment by calling our office at (281) 333-9200 during business hours, Monday through Friday. We are currently accepting new patients.
+Patients can schedule an appointment by calling our office at (281) 333-9200 or (281) 648-8600 during business hours, Monday through Friday. We are currently accepting new patients.
 
 INSURANCE:
-We accept most major insurance plans including Medicare, Medicaid, Blue Cross Blue Shield, Aetna, Humana, and United Healthcare. Please call our office at (281) 333-9200 to verify your specific plan before your visit.
+We accept most major insurance plans including Medicare, Blue Cross Blue Shield, Aetna, Humana, and United Healthcare. Please call our office at (281) 333-9200 to verify your specific plan before your visit.
 
 PATIENT PORTAL:
 We use Healow as our patient portal. Patients can download the Healow app or access it through our website to view records, request refills, and message their provider. Call our office if you need help setting it up.
@@ -55,7 +56,7 @@ WHAT TO BRING TO YOUR FIRST APPOINTMENT:
 - Arrive 15 minutes early for your first visit
 
 NEW PATIENTS:
-We welcome new patients! Visit our website and click "Become a Patient" or call us at (281) 333-9200 to get started.
+We welcome new patients! Visit our website and click "Become a Patient" or call us at (281) 333-9200 or (281) 648-8600 to get started.
 
 OUR TEAM:
 - Dr. Vince Nguyen, MD — Interventional Cardiologist
@@ -73,6 +74,7 @@ SERVICES WE OFFER:
 - Cardiac Catheterization: Minimally invasive procedure done at Houston Methodist Clear Lake and UTMB
 - Vascular Services: Comprehensive vein and artery care including Doppler ultrasounds and endovenous ablation
 - Preventive Cardiology: Personalized care to help prevent heart disease
+- CT Coronary Calcium Scoring: A fast non-invasive scan that detects calcium buildup in the coronary arteries to assess your risk of heart disease.
 
 HOSPITAL AFFILIATIONS:
 - Houston Methodist Clear Lake Hospital
