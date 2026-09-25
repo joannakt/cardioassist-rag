@@ -136,23 +136,29 @@ STYLE:
 - You are not a substitute for professional medical advice"""
 
 # ── EMERGENCY ROUTING (runs BEFORE Claude; no API call is made) ──
+# Proximity-based: a body-part word and a symptom word within a few words of each other,
+# in either order ("my chest is hurting", "tight feeling in my chest").
+_GAP = r"\W+(?:\w+\W+){0,4}?"
+_CHEST = r"(?:chest|heart|sternum|breastbone)"
+_CHEST_SX = r"(?:pain\w*|hurt\w*|ache\w*|aching|tight\w*|pressure|heav\w*|squeez\w*|crush\w*|burn\w*|sharp|stabbing|discomfort)"
+_BREATH_SX = r"(?:can'?t|cannot|can\s*not|unable\s+to|trouble|difficult\w*|hard|struggl\w*|short\w*|gasping|out\s+of)"
 EMERGENCY_PATTERNS = [
-    r"chest\s*(pain|pressure|tightness|hurts?|discomfort|heaviness)",
-    r"(pain|pressure|tightness|heaviness|squeezing|crushing)\s+(in|on)\s+(my\s+)?chest",
-    r"crushing",
-    r"heart\s*attack",
-    r"cardiac\s*arrest",
-    r"can'?t\s+breathe|cannot\s+breathe|can\s*not\s+breathe",
-    r"(trouble|difficulty|hard\s+to|struggling\s+to)\s+breath",
-    r"short(ness)?\s+of\s+breath",
-    r"(passed|passing)\s+out|fainted|fainting|blacked\s+out|lost\s+consciousness|unconscious|unresponsive",
-    r"not\s+breathing|no\s+pulse",
-    r"stroke|face\s+(is\s+)?droop|slurred\s+speech|numb(ness)?\s+(on\s+)?(one|left|right)\s+side",
-    r"(defibrillator|icd|device)\s+(shocked|fired|went\s+off)|got\s+shocked",
-    r"(pain|numb(ness)?)\s+(in|down)\s+(my\s+)?(left\s+)?(arm|jaw)",
-    r"(heart|pulse)\s+(is\s+)?(racing|pounding)|(very|really|super)\s+(fast|slow)\s+(heart|pulse)",
-    r"severe(ly)?\s+dizz|about\s+to\s+(faint|pass\s+out)",
-    r"coughing\s+(up\s+)?blood",
+    _CHEST + _GAP + _CHEST_SX,
+    _CHEST_SX + _GAP + _CHEST,
+    r"crushing|elephant\s+(on|sitting\s+on)",
+    r"heart\s*attack|cardiac\s*arrest|not\s+breathing|no\s+pulse|stopped\s+breathing",
+    _BREATH_SX + _GAP + r"breath\w*",
+    r"(?:passed|passing|pass)\s+out|faint\w*|black(?:ed|ing)?\s+out|lost\s+consciousness|unconscious|unresponsive|collapsed?",
+    r"stroke|droop\w*|slurr\w*|numb\w*|tingl\w*\s+(?:in|down)",
+    r"(?:defibrillator|icd|device|pacemaker)" + _GAP + r"(?:shock\w*|fir\w*|went\s+off|zapp\w*)|got\s+shocked",
+    r"(?:arm|jaw|neck|back|shoulder)" + _GAP + r"(?:pain\w*|hurt\w*|ache\w*|numb\w*)",
+    r"(?:heart|pulse|heartbeat|heart\s*rate)" + _GAP + r"(?:racing|pounding|fluttering|skipping|irregular|very\s+(?:fast|slow)|really\s+(?:fast|slow)|won'?t\s+slow)",
+    r"(?:very|really|super|extremely|severe\w*)\s+dizz\w*|about\s+to\s+(?:faint|pass\s+out)|room\s+(?:is\s+)?spinning",
+    r"cough\w*\s+(?:up\s+)?blood|vomit\w*\s+blood",
+    r"sweating\s+(?:a\s+lot|profusely|heavily)|cold\s+sweat",
+    r"(?:lips|face|fingers)\W+(?:\w+\W+){0,3}?(?:blue|gray|grey)",
+    r"(?:leg|legs|ankles?|feet)\s+(?:is\s+|are\s+)?(?:suddenly\s+)?swollen\w*.{0,30}breath",
+    r"emergency|911|\bER\b",
 ]
 CRISIS_PATTERNS = [
     r"suicid", r"kill\s+myself", r"end\s+my\s+life", r"want\s+to\s+die", r"self[\s-]?harm", r"hurt\s+myself",
