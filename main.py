@@ -272,7 +272,6 @@ async def chat(req: ChatRequest, request: Request):
         response = client.messages.create(
             model=MODEL,
             max_tokens=400,
-            temperature=0.2,
             system=SYSTEM_PROMPT,
             messages=msgs,
         )

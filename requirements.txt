@@ -1,4 +1,4 @@
-fastapi
-uvicorn
-anthropic
-python-dotenv
+fastapi==0.162.0
+uvicorn==0.54.0
+anthropic==2.3.0
+python-dotenv==1.2.4

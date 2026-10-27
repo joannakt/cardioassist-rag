@@ -35,7 +35,7 @@ Safety layer (deterministic, runs before any AI call)
   ├─ Emergency symptoms  → "Call 911" reply
   └─ Personal identifiers (SSN, DOB, member ID, ...) → privacy reply
       ↓
-Claude API (claude-sonnet-4-6, temperature 0.2)
+Claude API (claude-sonnet-4-6)
   with a strict administrative system prompt + the clinic knowledge base
       ↓
 Reply returned to the widget, tagged with a type
